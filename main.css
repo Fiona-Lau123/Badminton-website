@@ -1,0 +1,62 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("images_badminton/top_img.png");
+    background-size: 100% 310%;
+    background-repeat: no-repeat;
+    margin: 0%;
+    width: 100vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: aqua;
+}
+
+.navbar {
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+}
+
+nav {
+    top: 0%;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.nav-links-container {
+    padding: 16px 0;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links>.nav-link-items {
+    display: inline-block;
+    margin: 0 100px;
+    position: relative;
+}
+
+.nav-links>.nav-link-items>a {
+    text-decoration: none;
+    display: flex;
+    padding: 16px 0;
+    font-weight: 500;
+    transition: 0.3s ease;
+    align-items: center;
+}
+
+.nav-links>.nav-link-items:hover>a {
+    color: blue;
+}
