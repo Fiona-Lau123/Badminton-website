@@ -5,6 +5,8 @@
 
     <!--Link the page to the css -->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
     <title>AGGS badminton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,21 +18,27 @@
     <!--This codes out the navigation bar while
          also considering it in responsive mode-->
     <div class="nav-container">
+
         <!--<input id="nav-toggle" type="checkbox"> -->
         <div class="nav-logo">
             <a href="index.html"><img src="images_badminton/aggs_logo.png" alt="Image of hari dance logo" style="width:300px;height:100px;"></a>
         </div>
 
+        <i class="fa-solid fa-bars open-menu"></i>
+        <div class="background"></div>
+
         <!--Links to the other pages-->
         <div class="nav-links-container">
+            <i class="fa-solid fa-xmark close-menu"></i>
+
             <ul class="nav-links">
                 <li class="nav-link-items"><a href="index.html">Home</a></li>
-                <li class="nav-link-items"><a href="games.html">Games<i class ="fa-solid fa-chevron-down"> </i></a>
+                <li class="nav-link-items dropdown-menu-branch"><a href="games.html" data-toggle="dropdown-menu">Games<i class ="fa-solid fa-chevron-down"> </i></a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="locations.html">Locations</a></li>
-                        <li><a href="rules.html">Rules</a></li>
-                        <li><a href="score.html">Score</a></li>
+                        <li class="dropdown-menu-item"><a href="locations.html">Locations</a></li>
+                        <li class="dropdown-menu-item"><a href="rules.html">Rules</a></li>
+                        <li class="dropdown-menu-item"><a href="score.html">Score</a></li>
                     </ul>
 
                 </li>
@@ -38,6 +46,7 @@
             </ul>
         </div>
     </div>
+    <script src="badminton.js"></script>
 
     <!--Links to access the font-->
     <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&

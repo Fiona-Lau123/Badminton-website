@@ -14,7 +14,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: aqua;
+    color: white;
 }
 
 .navbar {
@@ -48,6 +48,7 @@ nav {
 }
 
 .nav-links>.nav-link-items>a {
+    color: white;
     text-decoration: none;
     display: flex;
     padding: 16px 0;
@@ -57,5 +58,168 @@ nav {
 }
 
 .nav-links>.nav-link-items:hover>a {
-    color: blue;
+    color: #003768;
+}
+
+.nav-link-items>a>.fa-chevron-down {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.nav-link-items:hover>a>.fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.nav-links>.nav-link-items>.dropdown-menu {
+    width: 200px;
+    position: absolute;
+    top: 80%;
+    left: -16px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: translateY(0);
+    transition: 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-links>.nav-link-items:hover>.dropdown-menu {
+    transform: translateY(8px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item {
+    list-style: none;
+}
+
+.nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a {
+    text-decoration: none;
+    display: block;
+    color: #777;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: 16px;
+}
+
+.nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a:hover {
+    color: #fff;
+    background-color: #2d58d927;
+}
+
+.nav-container .background {
+    position: fixed;
+    z-index: 998;
+    background-color: #00000071;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.nav-container .background.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+.nav-container .open-menu {
+    display: none;
+    font-size: 24px;
+    color: #003768;
+}
+
+.nav-container .close-menu {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    body {
+        max-width: 992px;
+        overflow: hidden;
+    }
+    .nav-container {
+        padding: 0 3rem;
+    }
+    .nav-container .nav-links-container {
+        position: absolute;
+        right: -500px;
+        visibility: hidden;
+        width: 400px;
+        height: 100%;
+        top: 0;
+        overflow-y: auto;
+        background-color: #003768;
+        z-index: 999;
+        padding: 15px;
+        transition: all 0.3s ease-in;
+    }
+    .nav-container .nav-links-container.open {
+        visibility: visible;
+        transition: all 0.3s ease-out;
+        right: 0;
+    }
+    .nav-links-container>.nav-links>.nav-link-items {
+        display: block;
+        margin: 0;
+    }
+    .nav-links-container>.nav-links>.nav-link-items>a {
+        color: #fff;
+        padding: 24px 16px;
+        border-bottom: 1px solid #ffffff20;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-link-items:hover>a>.fa-chevron-down {
+        transform: rotate(0);
+    }
+    .nav-container>.nav-links-container>.nav-links>.dropdown-menu-branch.active>a .fa-chevron-down {
+        transform: rotate(-180deg);
+    }
+    .nav-links>.nav-link-items>.dropdown-menu {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 0;
+        border-bottom: 1px solid #ffffff20;
+        background-color: transparent;
+        transform: translateY(0px);
+        box-shadow: none;
+        padding: 0px;
+        left: auto;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .nav-links>.nav-link-items:hover>.dropdown-menu {
+        transform: translateY(0px);
+    }
+    .nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a {
+        color: #ffffff21;
+        border: none;
+    }
+    .nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a:hover {
+        color: #fff;
+    }
+    .nav-container .open-menu {
+        cursor: pointer;
+        display: block;
+    }
+    .nav-container .close-menu {
+        display: block;
+        padding: 16px;
+        cursor: pointer;
+        width: fit-content;
+    }
 }
