@@ -13,8 +13,11 @@ body {
 .card_1 {
     position: relative;
     overflow: hidden;
-    margin: 8%;
-    margin-top: 17%;
+    /* margin-top: 17%;
+    margin-bottom: 4%; */
+    margin: 9%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .card_1 img {
@@ -35,7 +38,6 @@ body {
     flex-direction: column;
     left: 0;
     bottom: 0;
-    /* border-radius: 10px; */
     background: linear-gradient(transparent, #003768 90%);
     padding: 0 50px;
     text-align: center;
@@ -64,11 +66,12 @@ body {
 
 .card_row {
     display: grid;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    grid-gap: 30px;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    /* grid-gap: 30px; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    width: 100%;
+    width: 91%;
+    padding-left: 5%;
 }
 
 footer {
