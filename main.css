@@ -85,6 +85,20 @@ footer {
     color: white;
 }
 
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 10px auto 0;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
 .nav-logo {
     padding: 1%;
 }
@@ -451,5 +465,33 @@ nav {
         max-width: 100%;
         margin: 0px;
         background-size: 450px, 30%;
+    }
+    .table_title {
+        text-align: center;
+    }
+    .score_table thead {
+        display: none;
+    }
+    .score_table tr,
+    .score_table td {
+        display: block;
+    }
+    .score_table tr:not(:last-child) {
+        border-bottom: 5px solid grey;
+    }
+    .score_table td {
+        padding-left: 54%;
+        position: relative;
+    }
+    .score_table td::before {
+        position: absolute;
+        padding: 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 45%;
+        content: attr(data-col-title);
+        font-weight: bold;
+        background-color: #f3f6fa;
     }
 }
