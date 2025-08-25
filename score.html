@@ -6,6 +6,9 @@
     <!--Link the page to the css -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
 
     <title>AGGS badminton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,53 +60,55 @@
 
     <!--The title for the home page-->
     <h1>
-        AGGS BADMINTON
+        <span>MATCH</span> <span><br>DETAILS</span>
     </h1>
 
-    <h2 class="home_sub">AUCKLAND GIRLS' <br> GRAMMAR BADMINTON</h2>
+    <h2 class="home_sub">SCORES AND MATCHES</h2>
 
-    <h2 class="table_title">OVERALL</h2>
-    <table class="score_table">
-        <thead>
-            <tr>
-                <th>PLACE</th>
-                <th>SCHOOL</th>
-                <th>POINTS</th>
-                <th>WON</th>
-                <th>LOST</th>
-                <th>PLAYED</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-col-title="PLACE">1</td>
-                <td data-col-title="SCHOOL">AGGS 1</td>
-                <td data-col-title="POINTS">6</td>
-                <td data-col-title="WON">6</td>
-                <td data-col-title="LOST">0</td>
-                <td data-col-title="PLAYED">6</td>
-            </tr>
+    <div class="scores">
+        <h3 class="table_title">OVERALL</h3>
+        <table class="score_table">
+            <thead>
+                <tr>
+                    <th>PLACE</th>
+                    <th>SCHOOL</th>
+                    <th>POINTS</th>
+                    <th>WON</th>
+                    <th>LOST</th>
+                    <th>PLAYED</th>
+                </tr>
+            </thead>
 
-            <tr>
-                <td data-col-title="PLACE">2</td>
-                <td data-col-title="SCHOOL">AGGS 3</td>
-                <td data-col-title="POINTS">5</td>
-                <td data-col-title="WON">5</td>
-                <td data-col-title="LOST">1</td>
-                <td data-col-title="PLAYED">6</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td data-col-title="PLACE">1</td>
+                    <td data-col-title="SCHOOL">AGGS 1</td>
+                    <td data-col-title="POINTS">6</td>
+                    <td data-col-title="WON">6</td>
+                    <td data-col-title="LOST">0</td>
+                    <td data-col-title="PLAYED">6</td>
+                </tr>
 
-            <tr>
-                <td data-col-title="PLACE">3</td>
-                <td data-col-title="SCHOOL">AGGS 7</td>
-                <td data-col-title="POINTS">4</td>
-                <td data-col-title="WON">4</td>
-                <td data-col-title="LOST">2</td>
-                <td data-col-title="PLAYED">6</td>
-            </tr>
-        </tbody>
+                <tr>
+                    <td data-col-title="PLACE">2</td>
+                    <td data-col-title="SCHOOL">AGGS 3</td>
+                    <td data-col-title="POINTS">5</td>
+                    <td data-col-title="WON">5</td>
+                    <td data-col-title="LOST">1</td>
+                    <td data-col-title="PLAYED">6</td>
+                </tr>
 
-    </table>
+                <tr>
+                    <td data-col-title="PLACE">3</td>
+                    <td data-col-title="SCHOOL">AGGS 7</td>
+                    <td data-col-title="POINTS">4</td>
+                    <td data-col-title="WON">4</td>
+                    <td data-col-title="LOST">2</td>
+                    <td data-col-title="PLAYED">6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
     <!-- <div class="content_items">
@@ -114,14 +119,43 @@
 
     </div> -->
 
-    <div class="home-item1">
-        <div class="home_content">
-            <!--Stores the content-->
-            <h3 class="home_sub">BADMINTON AT AGGS</h3>
-            <p> Auckland Girls’ Grammar (AGGS) offers badminton during term 2. Any year level is welcome to join. If you’ve had no or little experience with badminton your still free to join, there would be badminton training to help improve on skills.</p>
+    <h3>MATCHES</h3>
+
+
+    <div class="score-item">
+        <div class="score_content">
+
+            <!-- <img class="background_img" src="images_badminton/background.png" alt="Image of rackets"> -->
+
+            <!--Subtitle for the first class-->
+            <div class="text">
+                <h4>Advance - Games are on Monday</h4>
+
+                <!--Content or information for the first class-->
+                <p> AGGS 1 vs Lynfield<br> AGGS 2 vs MAGS<br> AGGS 3 vs Baradene<br> AGGS 4 vs EGGS<br>
+                </p>
+            </div>
         </div>
 
-        <img class="content_img" src="images_badminton/home-content.png" alt="Image of someone serving">
+        <img class="content_img" src="images_badminton/matches_img1.png" alt="Image of someone serving">
+    </div>
+
+    <div class="score-item">
+        <img class="content_img" src="images_badminton/matches_img2.png" alt="Image of someone serving">
+
+        <div class="score_content">
+
+            <!-- <img class="background_img" src="images_badminton/background.png" alt="Image of rackets"> -->
+
+            <!--Subtitle for the first class-->
+            <div class="text">
+                <h4>Social - Games are on Thursday</h4>
+
+                <!--Content or information for the first class-->
+                <p>AGGS 5 vs EGGS 2<br> AGGS 6 vs EGGS 4<br> AGGS 7 vs EGGS 1<br> AGGS 8 vs EGGS 3<br> AGGS 9 vs EGGS 6<br>AGGS 10 vs EGGS 5<br>
+                </p>
+            </div>
+        </div>
     </div>
 
 
