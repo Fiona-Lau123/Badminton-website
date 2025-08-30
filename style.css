@@ -458,7 +458,7 @@ nav {
     width: 40px;
     margin-left: 10px;
     transition: 0.3s ease;
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 
 .nav-link-items:hover>a>.fa-chevron-down {
@@ -750,6 +750,11 @@ a .fa-chevron-down {
     }
     .scores {
         background-image: none;
+    }
+    .nav-links .nav-link-items a .fa-chevron-down {
+        pointer-events: none;
+        width: 0px;
+        /* Prevent the chevron from triggering hover */
     }
 }
 
