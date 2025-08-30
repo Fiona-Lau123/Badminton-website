@@ -6,10 +6,13 @@
     <!--Link the page to the css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Links to fonts, to use in css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,800;1,800&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- The title of the page -->
     <title>AGGS badminton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,33 +24,63 @@
          also considering it in responsive mode-->
     <div class="nav-container">
 
-        <!--<input id="nav-toggle" type="checkbox"> -->
+        <!-- This code is for the logo that will be displayed in the 
+         same section as navigation bar -->
         <div class="nav-logo">
-            <a href="index.html"><img src="images_badminton/aggs_logo.png" alt="Image of hari dance logo" style="width:100%; height:100%;"></a>
+            <a href="index.html"><img src="images_badminton/aggs_logo.png" alt="Image of AGGS logo" style="width:100%; height:100%;"></a>
         </div>
 
+        <!-- The icon of the bugrer menu -->
         <i class="fa-solid fa-bars open-menu"></i>
+
+        <!-- The background for the navigation bar when burger 
+         menu is being used -->
         <div class="background"></div>
 
-        <!--Links to the other pages-->
+        <!--Links to the pages-->
         <div class="nav-links-container">
             <i class="fa-solid fa-xmark close-menu"></i>
 
+            <!-- This is where the items of the navigation bar would be -->
             <ul class="nav-links">
-                <li class="nav-link-items"><a href="index.html">HOME</a></li>
-                <li class="nav-link-items dropdown-menu-branch"><a href="games.html" data-toggle="dropdown-menu">GAMES<i class ="fa-solid fa-chevron-down"> </i></a>
 
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="locations.html">Locations</a></li>
-                        <li class="dropdown-menu-item"><a href="rules.html">Rules</a></li>
-                        <li class="dropdown-menu-item"><a href="score.html">Score</a></li>
-                    </ul>
-
+                <!-- Code for the home page link -->
+                <li class="nav-link-items"><a href="index.html" class="underline">HOME</a>
                 </li>
-                <li class="nav-link-items"><a href="contact.html">CONTACT</a></li>
+
+                <!-- Code for the games page link, 
+                 along with the dropdown menu -->
+                <li class="nav-link-items dropdown-menu-branch">
+                    <a href="games.html" data-toggle="dropdown-menu">
+                        <span class="hover">GAMES</span>
+                        <i class="fa-solid fa-chevron-down"> </i>
+                    </a>
+
+
+                    <!-- The dropdown menu links in the games navigation -->
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="locations.html">Locations</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="rules.html">Rules</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="score.html">Score</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Code for the contact page link -->
+                <li class="nav-link-items">
+                    <a href="contact.html">
+                        <span class="hover">CONTACT</span></a>
+                </li>
             </ul>
         </div>
     </div>
+
+    <!-- Linking this html to the javascript name -->
     <script src="badminton.js"></script>
 
 
@@ -63,12 +96,17 @@
         <span>MATCH</span> <span><br>DETAILS</span>
     </h1>
 
+    <!-- Code for the subtitle -->
     <h2 class="home_sub">SCORES AND MATCHES</h2>
 
+
+    <!-- Displaying the table of the scores -->
     <div class="scores">
         <h3 class="table_title">OVERALL</h3>
+        <!--Tile for table-->
         <table class="score_table">
             <thead>
+                <!-- The first row or the main title for each section -->
                 <tr>
                     <th>PLACE</th>
                     <th>SCHOOL</th>
@@ -80,6 +118,7 @@
             </thead>
 
             <tbody>
+                <!-- Code and data for the second row -->
                 <tr>
                     <td data-col-title="PLACE">1</td>
                     <td data-col-title="SCHOOL">AGGS 1</td>
@@ -89,6 +128,7 @@
                     <td data-col-title="PLAYED">6</td>
                 </tr>
 
+                <!-- Code and data for the third row -->
                 <tr>
                     <td data-col-title="PLACE">2</td>
                     <td data-col-title="SCHOOL">AGGS 3</td>
@@ -98,6 +138,7 @@
                     <td data-col-title="PLAYED">6</td>
                 </tr>
 
+                <!-- Code and data for the fourth row -->
                 <tr>
                     <td data-col-title="PLACE">3</td>
                     <td data-col-title="SCHOOL">AGGS 7</td>
@@ -110,54 +151,45 @@
         </table>
     </div>
 
-
-    <!-- <div class="content_items">
-        <img class="content_img" src="images_badminton/home-content.png" alt="Image of someone serving">
-
-        <h3 class="home_sub">BADMINTON AT AGGS</h3>
-        <p> Auckland Girls’ Grammar (AGGS) offers badminton during term 2. Any year level is welcome to join. If you’ve had no or little experience with badminton your still free to join, there would be badminton training to help improve on skills.</p>
-
-    </div> -->
-
+    <!-- Subtitle for the next section -->
     <h3 class="h3_score">MATCHES</h3>
 
-
+    <!-- Code for the first section of information about matches -->
     <div class="score-item1">
         <div class="score_content">
 
-            <!-- <img class="background_img" src="images_badminton/background.png" alt="Image of rackets"> -->
-
-            <!--Subtitle for the first class-->
+            <!--Subtitle for this section-->
             <div class="text">
                 <h4>Advance - Games are on Monday</h4>
 
-                <!--Content or information for the first class-->
+                <!--Content or information for this section-->
                 <p> AGGS 1 vs Lynfield<br> AGGS 2 vs MAGS<br> AGGS 3 vs Baradene<br> AGGS 4 vs EGGS<br>
                 </p>
             </div>
         </div>
 
+        <!-- Image for this section and wil be placed next to content -->
         <img class="content_img" src="images_badminton/matches_img1.png" alt="Image of someone serving">
     </div>
 
+    <!-- Code for the second section of information about matches -->
     <div class="score-item2">
+
+        <!-- Image for this section and wil be placed next to content -->
         <img class="content_img" src="images_badminton/matches_img2.png" alt="Image of someone serving">
 
         <div class="score_content">
 
-            <!-- <img class="background_img" src="images_badminton/background.png" alt="Image of rackets"> -->
-
-            <!--Subtitle for the first class-->
+            <!--Subtitle for this section-->
             <div class="text">
                 <h4>Social - Games are on Thursday</h4>
 
-                <!--Content or information for the first class-->
+                <!--Content or information for second section on matches-->
                 <p>AGGS 5 vs EGGS 2<br> AGGS 6 vs EGGS 4<br> AGGS 7 vs EGGS 1<br> AGGS 8 vs EGGS 3<br> AGGS 9 vs EGGS 6<br>AGGS 10 vs EGGS 5<br>
                 </p>
             </div>
         </div>
     </div>
-
 
 
     <!--Code for the footer at the bottom-->

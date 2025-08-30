@@ -6,10 +6,13 @@
     <!--Link the page to the css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Links to fonts, to use in css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,800;1,800&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- The title of the page -->
     <title>AGGS badminton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,33 +24,63 @@
          also considering it in responsive mode-->
     <div class="nav-container">
 
-        <!--<input id="nav-toggle" type="checkbox"> -->
+        <!-- This code is for the logo that will be displayed in the 
+         same section as navigation bar -->
         <div class="nav-logo">
-            <a href="index.html"><img src="images_badminton/aggs_logo.png" alt="Image of hari dance logo" style="width:100%; height:100%;"></a>
+            <a href="index.html"><img src="images_badminton/aggs_logo.png" alt="Image of AGGS logo" style="width:100%; height:100%;"></a>
         </div>
 
+        <!-- The icon of the bugrer menu -->
         <i class="fa-solid fa-bars open-menu"></i>
+
+        <!-- The background for the navigation bar when burger 
+         menu is being used -->
         <div class="background"></div>
 
-        <!--Links to the other pages-->
+        <!--Links to the pages-->
         <div class="nav-links-container">
             <i class="fa-solid fa-xmark close-menu"></i>
 
+            <!-- This is where the items of the navigation bar would be -->
             <ul class="nav-links">
-                <li class="nav-link-items"><a href="index.html">HOME</a></li>
-                <li class="nav-link-items dropdown-menu-branch"><a href="games.html" data-toggle="dropdown-menu">GAMES<i class ="fa-solid fa-chevron-down"> </i></a>
 
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="locations.html">Locations</a></li>
-                        <li class="dropdown-menu-item"><a href="rules.html">Rules</a></li>
-                        <li class="dropdown-menu-item"><a href="score.html">Score</a></li>
-                    </ul>
-
+                <!-- Code for the home page link -->
+                <li class="nav-link-items"><a href="index.html" class="underline">HOME</a>
                 </li>
-                <li class="nav-link-items"><a href="contact.html">CONTACT</a></li>
+
+                <!-- Code for the games page link, 
+                 along with the dropdown menu -->
+                <li class="nav-link-items dropdown-menu-branch">
+                    <a href="games.html" data-toggle="dropdown-menu">
+                        <span class="hover">GAMES</span>
+                        <i class="fa-solid fa-chevron-down"> </i>
+                    </a>
+
+
+                    <!-- The dropdown menu links in the games navigation -->
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="locations.html">Locations</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="rules.html">Rules</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="score.html">Score</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Code for the contact page link -->
+                <li class="nav-link-items">
+                    <a href="contact.html">
+                        <span class="hover">CONTACT</span></a>
+                </li>
             </ul>
         </div>
     </div>
+
+    <!-- Linking this html to the javascript name -->
     <script src="badminton.js"></script>
 
 
@@ -63,48 +96,41 @@
         <span>VENUE</span> <span><br>PLACES AND DATES</span>
     </h1>
 
+    <!-- Code for the subtitle -->
     <h2 class="home_sub">LOCATIONS</h2>
 
-
-    <!-- <div class="content_items">
-        <img class="content_img" src="images_badminton/home-content.png" alt="Image of someone serving">
-
-        <h3 class="home_sub">BADMINTON AT AGGS</h3>
-        <p> Auckland Girls’ Grammar (AGGS) offers badminton during term 2. Any year level is welcome to join. If you’ve had no or little experience with badminton your still free to join, there would be badminton training to help improve on skills.</p>
-
-    </div> -->
-
+    <!-- The first section of the page -->
     <div class="class-item1">
         <div class="location_content">
 
-            <!-- <img class="background_img" src="images_badminton/background.png" alt="Image of rackets"> -->
-
-            <!--Subtitle for the first class-->
+            <!--Subtitle for the first section-->
             <div class="text">
                 <h3>TRAINING DAYS</h3>
 
-                <!--Content or information for the first class-->
+                <!--Content or information for the first section-->
                 <p lass="location_content2">AGGS badminton training are held on <b><i>Friday</i></b> at: <br>
                     <br>149 Greys Avenue, Auckland Central, Auckland 1010
                 </p>
             </div>
         </div>
 
+        <!-- Image that is placed next to the content -->
         <img class="content_img" src="images_badminton/locations_img1.png" alt="Image of someone serving">
     </div>
 
+    <!-- The second section of the page -->
     <div class="class-item2">
+
+        <!-- Image of the second section, that will be placed next to the content -->
         <img class="content_img" src="images_badminton/locations_img2.png" alt="Image of someone serving">
 
         <div class="location_content">
 
-            <!-- <img class="background_img" src="images_badminton/background.png" alt="Image of rackets"> -->
-
-            <!--Subtitle for the first class-->
+            <!--Subtitle for the second section-->
             <div class="text">
                 <h3>GAME DAYS</h3>
 
-                <!--Content or information for the first class-->
+                <!--Content or information for the second section-->
                 <p class="location_content2">AGGS team 1 to 4 - <b><i>Games are on Monday</i></b><br>
                     <br>AGGS team 5 to 10 - <b><i>Games are on Thursday</i></b><br>
                     <br>location: 99 Gillies Avenue, Epsom, Auckland 1023

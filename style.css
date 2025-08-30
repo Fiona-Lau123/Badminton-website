@@ -1,34 +1,51 @@
+/* Imports of fonts */
+
 @font-face {
     font-family: 'benedict';
     src: url(font/Benedict\ Regular.otf);
 }
+
+
+/* Imports of fonts */
 
 @font-face {
     font-family: 'gotham condensed';
     src: url(font/GothamCondensed-Medium.otf);
 }
 
+
+/* Link decoration type */
+
 a {
     text-decoration: none;
 }
 
+
+/* Overall body */
+
 body {
     background-image: url("images_badminton/top_img.png");
+    /*background image*/
+    /* Fitting of the background image */
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0%;
     width: 100%;
 }
 
+
+/* Cards that are needed for all pages */
+
 .card_1 {
     position: relative;
     overflow: hidden;
-    /* margin-top: 17%;
-    margin-bottom: 4%; */
     margin: 9%;
     margin-left: 10%;
     margin-right: 10%;
 }
+
+
+/* Size and adjustments on the card image */
 
 .card_1 img {
     height: 100%;
@@ -37,61 +54,75 @@ body {
     transition: transform 0.5s;
 }
 
+
+/* The content on the card  */
+
 .cover {
     height: 0;
     width: 100%;
+    /* Positioning it so it's underneath */
     position: absolute;
     display: flex;
-    /* overflow: hidden; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
     left: 0;
     bottom: 0;
+    /* Color fixing */
     background: linear-gradient(transparent, #003768 60%);
     padding: 180px 0px;
     padding-bottom: 0px;
     text-align: center;
     color: white;
+    /* Positioning where the content will be */
     transition: height 0.5s;
     background-position: center top;
     margin-bottom: -50px;
 }
 
 
-/* .box_content {
-    float: left;
-} */
+/* How much the card will transform */
 
 .card_1:hover img {
     transform: scale(1.2);
 }
 
+
+/* The height at which the card will be when hovered */
+
 .card_1:hover .cover {
     height: 130%;
 }
+
+
+/* The cover link inside the boxes */
 
 .cover a {
     margin-top: 10px;
     font-size: 14px;
     text-decoration: none;
     font-weight: 500;
+    /* Colouring of the text */
     color: #003768;
     background: white;
+    /* Giving it a boarder */
     border-radius: 50px;
     text-align: center;
     padding: 15px 15px;
 }
 
+
+/* The way the card will be laied out */
+
 .card_row {
     display: grid;
-    /* margin-top: 50px;
-    margin-bottom: 50px; */
-    /* grid-gap: 30px; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 91%;
     padding-left: 5%;
 }
+
+
+/* Footer for all pages */
 
 footer {
     background-color: #003768;
@@ -100,11 +131,17 @@ footer {
     padding-bottom: 2.5%;
 }
 
+
+/* This is focusing on the text on the footer */
+
 .footer {
     color: white;
     font-size: 23px;
     font-family: 'Oleo Script', system-ui;
 }
+
+
+/* Styling for the table */
 
 table {
     border-collapse: collapse;
@@ -114,24 +151,33 @@ table {
     border-radius: 10px;
 }
 
+
+/* How the table will be shaped and the lines across */
+
 table th,
 table td {
     border: 1px solid black;
     padding: 20px 10px;
 }
 
+
+/* How the logo will be placed */
+
 .nav-logo {
     padding: 1%;
 }
+
+
+/* Overll styling for h1 */
 
 h1 {
     text-align: right;
     padding-right: 15%;
     margin-top: 5%;
-    /* padding-top: 10%;
-    padding-bottom: 20%; */
-    /* font-family: 'benedict'; */
 }
+
+
+/* This is the styling for first span or the first word  */
 
 h1 span:first-child {
     font-family: 'benedict';
@@ -139,6 +185,9 @@ h1 span:first-child {
     color: #003768;
     font-weight: 100;
 }
+
+
+/* This is the styling for second span or the second word  */
 
 h1 span:last-child {
     font-family: 'gotham condensed';
@@ -150,32 +199,15 @@ h1 span:last-child {
 }
 
 
-/* ul.nav-links .hover:hover {
-    text-decoration: underline;
-} */
+/* This is the underline for the navigation depending on 
+which page users are on */
 
 .underline {
     text-decoration: underline;
 }
 
 
-/* .nav-links .nav-link-items a {
-    text-decoration: none;
-} */
-
-
-/* .content_img {
-    float: right;
-    width: 30%;
-}
-
-.content_items {
-    position: absolute;
-    width: 70%;
-    left: 15%;
-    top: 20%;
-    padding: 30px;
-} */
+/* Styling for the home items */
 
 .home-item1 {
     display: flex;
@@ -194,6 +226,9 @@ h1 span:last-child {
     background-size: 300px 100%;
 }
 
+
+/* Styling for items */
+
 .item {
     display: flex;
     align-items: center;
@@ -207,10 +242,16 @@ h1 span:last-child {
     margin: 10px auto;
 }
 
+
+/* The title of the small boxes */
+
 .box_title {
     font-size: 40px;
     margin: 0;
 }
+
+
+/* Fixing the layout of the content in the box */
 
 .box_content {
     font-size: 18px;
@@ -218,6 +259,9 @@ h1 span:last-child {
     margin-right: 20%;
     margin-bottom: 0;
 }
+
+
+/* Styling for h2 */
 
 h2 {
     text-align: center;
@@ -228,15 +272,24 @@ h2 {
     margin-top: 30px;
 }
 
+
+/* Styling for h3 */
+
 h3 {
     text-align: center;
     font-size: 45px;
     font-family: 'EB Garamond';
 }
 
+
+/* Fitting the h3 into the page. No extra gap */
+
 .h3_score {
     margin: auto;
 }
+
+
+/* Styling for h4 */
 
 h4 {
     text-align: center;
@@ -244,26 +297,38 @@ h4 {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/* Aligning and chaning font size for p */
+
 p {
     text-align: center;
-    /* padding: 10%; */
     font-size: 29px;
 }
+
+
+/* Fixing the way it's laid out */
 
 .general_rule {
     margin: 6%;
     margin-top: 0;
 }
 
+
+/* Fixing positioning and size of image */
+
 img.content_img {
     width: 500px;
     padding: 3%;
 }
 
-.class-item1 {
+
+/* Fixing positioning of the cards */
+
+.class-item1,
+.class-item2 {
     display: flex;
     align-items: center;
-    /* Align items in th center */
+    /* Align items in the center */
     gap: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -274,37 +339,30 @@ img.content_img {
     /* Center the cards */
 }
 
-.class-item2 {
-    display: flex;
-    align-items: center;
-    /* Align items in th center */
-    gap: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
-    max-width: 1200px;
-    /* Adjust width as needed */
-    margin: 10px auto;
-    /* Center the cards */
-}
+
+/* Fixind the layout for content2 */
 
 .location_content2 {
     padding-top: 8px;
 }
 
+
+/* Styling for the content */
+
 .class_content {
     flex: 2;
     margin: 5%;
-    /* padding: 6%; */
     text-align: center;
     background-image: url(images_badminton/background.png);
+    /*background image*/
+    /* Fixing the styling for background image */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%, 100%;
-    /* height: 100%;
-    width: 100%; */
-    /* Adjust to fit everything */
 }
+
+
+/* Styling for the location content */
 
 .location_content {
     flex: 2;
@@ -312,13 +370,15 @@ img.content_img {
     padding: 8%;
     text-align: center;
     background-image: url(images_badminton/background.png);
+    /*background image*/
+    /* Fixing the styling for background image */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%, 100%;
-    /* height: 100%;
-    width: 100%; */
-    /* Adjust to fit everything */
 }
+
+
+/* Styling for the score content */
 
 .score_content {
     flex: 2;
@@ -328,29 +388,32 @@ img.content_img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%, 100%;
-    /* height: 100%;
-    width: 100%; */
-    /* Adjust to fit everything */
 }
+
+
+/* The layout of the sections */
 
 .score-item1,
 .score-item2 {
     display: flex;
     align-items: center;
-    /* Align items in th center */
     gap: 20px;
     border-radius: 10px;
     overflow: hidden;
+    /* fixing the size of the section */
     padding: 20px;
     max-width: 1200px;
-    /* Adjust width as needed */
     margin: 10px auto;
-    /* Center the cards */
     background-image: url(images_badminton/score_background.png);
+    /*background image*/
+    /* Fixing the styling for background image */
     background-size: 70%, 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+/* Styling for scores */
 
 .scores {
     background-image: url(images_badminton/score_background.png);
@@ -361,6 +424,9 @@ img.content_img {
     padding-bottom: 100px;
 }
 
+
+/* Fixing the position of the ul links */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -368,31 +434,43 @@ ul {
     color: white;
 }
 
+
+/* Fixing the positioning */
+
 .navbar {
     margin: auto;
     padding: 0.5rem 1.5rem;
 }
 
-nav {
-    top: 0%;
-}
+
+/* Layout of the nav-container */
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    /* Styling of font */
     font-size: 200%;
     font-family: 'Oleo Script', system-ui;
 }
+
+
+/* The way the links will be spaced out */
 
 .nav-links-container {
     padding: 16px 0;
 }
 
+
+/* No list styling for nav-links */
+
 .nav-links {
     list-style: none;
 }
+
+
+/* Styling for the nav-link-items, making them in a good position */
 
 .nav-links>.nav-link-items {
     display: inline-block;
@@ -400,15 +478,21 @@ nav {
     position: relative;
 }
 
+
+/* How the links styling will look like */
+
 .nav-links>.nav-link-items>a {
+    /* Making text colour white */
     color: white;
-    /* text-decoration: none; */
     display: flex;
+    /* Changing the spacings around it */
     padding: 16px 0;
     font-weight: 500;
-    /* transition: 0.3s ease; */
     align-items: center;
 }
+
+
+/* Allowing hover effect to game navigation */
 
 .nav-links .nav-link-items a:hover span {
     text-decoration: underline;
@@ -416,22 +500,7 @@ nav {
 }
 
 
-/* Specific styling to target the chevron icon */
-
-
-/* .nav-links>.nav-link-items>a:hover {
-    color: #003768;
-    text-decoration: underline;
-}
-
-.nav-links>.nav-link-items>a:hover>.fa-chevron-down {
-    text-decoration: none;
-} */
-
-
-/* .hoverr:hover {
-    text-decoration: underline;
-} */
+/* Styling for the dropdown  */
 
 .nav-link-items>a>.fa-chevron-down {
     display: inline-block;
@@ -442,17 +511,27 @@ nav {
     pointer-events: none;
 }
 
+
+/* How the arrow will turn when hovered */
+
 .nav-link-items:hover>a>.fa-chevron-down {
     transform: rotate(-180deg);
 }
+
+
+/* The text decorations of the arrow*/
 
 a .fa-chevron-down {
     text-decoration: none;
 }
 
+
+/* Styling for the submenu  */
+
 .nav-links>.nav-link-items>.dropdown-menu {
     width: 200px;
     position: absolute;
+    /* Fixing the positioning  */
     top: 80%;
     left: -16px;
     border-radius: 10px;
@@ -460,34 +539,53 @@ a .fa-chevron-down {
     background-color: #fff;
     transform: translateY(0);
     transition: 0.3s ease;
+    /* Having it hidden at the moment */
     visibility: hidden;
     opacity: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+
+/* The styling when games have been hovered */
+
 .nav-links>.nav-link-items:hover>.dropdown-menu {
     transform: translateY(8px);
+    /* Making it visible when it's been hovered */
     visibility: visible;
     opacity: 1;
 }
+
+
+/* Making sure there is no list styling */
 
 .nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item {
     list-style: none;
 }
 
+
+/* Styling for dropdown menu */
+
 .nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a {
+    /* No text decoration for submenu */
     text-decoration: none;
     display: block;
+    /* Colouring of the text */
     color: #003768;
     font-weight: 500;
     transition: 0.3s ease;
     padding: 16px;
 }
 
+
+/* How the submenu will change when it's being hovered */
+
 .nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a:hover {
     color: #fff;
     background-color: #003768;
 }
+
+
+/* The background under the navigation when responsive*/
 
 .nav-container .background {
     position: fixed;
@@ -495,78 +593,106 @@ a .fa-chevron-down {
     background-color: #00000071;
     left: 0;
     top: 0;
+    /* layout of the background */
     height: 100%;
     width: 100%;
+    /* hidding the details first */
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in;
 }
 
+
+/* Open menu not being shown yet */
+
 .nav-container .open-menu {
     display: none;
+    /* styling for open menu */
     font-size: 24px;
     color: #003768;
 }
 
+
+/* Close menu not being shown yet */
+
 .nav-container .close-menu {
     display: none;
+    /* styling for close menu */
     font-size: 24px;
     color: #fff;
 }
 
+
+/* The styling and functions when the screen reaches 1250px */
+
 @media screen and (max-width: 1250px) {
     body {
-        /* max-width: 1140px; */
         background-size: 100%;
     }
+    /* Changing the placing by a bit by changing padding */
     .nav-container {
         padding: 0 2rem;
         padding-top: 1%;
     }
+    /* Shows the box with the navigation items when burger when is clicked */
     .nav-container .nav-links-container {
+        /* making sure that it's not displayed just yet */
         display: none;
         position: absolute;
         visibility: hidden;
+        /* Changing the sizing of the box */
         width: 400px;
         height: 100%;
         top: 0;
         overflow-y: auto;
+        /* colour of background */
         background-color: #003768;
         z-index: 999;
         padding: 15px;
         transition: all 0.3s ease-in;
     }
+    /* Shows the css when buger menu is clicked */
     .nav-container .nav-links-container.open {
+        /* displaying the box with navigation links */
         display: block;
+        /* allowing it to be seen now when its opened */
         visibility: visible;
         transition: all 0.3s ease-out;
         right: 0;
     }
+    /* Styling for the navigation items  */
     .nav-links-container>.nav-links>.nav-link-items {
         display: block;
         margin: 0;
     }
+    /* Changing the positioning of the navigation links */
     .nav-links-container>.nav-links>.nav-link-items>a {
         color: #fff;
         padding: 24px 26px;
         border-bottom: 1px solid #ffffff20;
         display: flex;
+        /* creating space next to the items */
         justify-content: space-between;
     }
+    /* When it hovers from the burger menu the arrow should not rotate */
     .nav-link-items:hover>a>.fa-chevron-down {
         transform: rotate(0);
     }
+    /* When the arrow down has been clicked, it will rotate at -180deg */
     .nav-container>.nav-links-container>.nav-links>.dropdown-menu-branch.active>a .fa-chevron-down {
         transform: rotate(-180deg);
     }
+    /* Making the background appear when burger menu is on display */
     .nav-container .background.active {
         visibility: visible;
         opacity: 1;
         transition: 0.3s ease-out;
     }
+    /* This is for the items when it's in burger menu */
     .nav-links>.nav-link-items>.dropdown-menu {
         width: 100%;
         position: relative;
+        /* chaning the intensity */
         opacity: 1;
         visibility: visible;
         border-radius: 0;
@@ -582,81 +708,92 @@ a .fa-chevron-down {
     .nav-links>.nav-link-items:hover>.dropdown-menu {
         transform: translateY(0px);
     }
+    /* How submenu will look like when the dropdown menu have been clicked */
     .nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a {
         color: #ffffff21;
         border: none;
     }
+    /* Styling of submenu when it's being hovered */
     .nav-links>.nav-link-items>.dropdown-menu>.dropdown-menu-item>a:hover {
         color: #fff;
     }
+    /* Focusing on opening on burger menu */
     .nav-container .open-menu {
         cursor: pointer;
         display: block;
     }
+    /* Focusing on closing on burger menu */
     .nav-container .close-menu {
         display: block;
         padding: 16px;
         cursor: pointer;
         width: fit-content;
     }
+    /* Changing the sizing when screen decreases */
     .nav-logo {
         padding: 0%;
         width: 300px;
         height: auto;
     }
+    /* Chaning the sizing for card_img */
     .card_img {
         width: 100%;
     }
+    /* Changing the way how home-item1 will look */
     .home-item1 {
         flex-direction: column-reverse;
-        /* Stack everything vertically */
         align-items: center;
         background-size: 260px 50%;
         background-position-y: 415px;
+        /* both margin left and right are the same, keeping it in middle*/
         margin-left: 15%;
         margin-right: 15%;
-        /* Center content */
     }
+    /* The way class-item2 will be displayed */
     .class-item2 {
         flex-direction: column-reverse;
-        /* Stack everything vertically */
         align-items: center;
-        /* Center content */
     }
+    /* The way class-item1 will be displayed */
     .class-item1 {
         flex-direction: column;
-        /* Stack everything vertically */
         align-items: center;
-        /* Center content */
     }
+    /* The way class_content will be displayed */
     .class_content {
         text-align: center;
-        /* Center the text content */
+        /* Chaning the positioning  */
         padding: 10px;
-        /* Add some padding for better spacing */
         max-width: 100%;
         margin: 0px;
+        /* Changing background size */
         background-size: 395px, 30%;
         padding-left: 10%;
         padding-right: 10%;
     }
+    /* Aligning the table_title */
     .table_title {
         text-align: center;
     }
     .score_table thead {
+        /* Not displaying anything */
         display: none;
     }
+    /* Making it into a block */
     .score_table tr,
     .score_table td {
         display: block;
     }
+    /* At each section the line will be split using this */
     .score_table tr:not(:last-child) {
         border-bottom: 5px solid #003768;
     }
+    /* Chaning the positioning */
     .score_table td {
         padding-left: 54%;
         position: relative;
     }
+    /* Changing the styling and positions inside */
     .score_table td::before {
         position: absolute;
         padding: 5px;
@@ -668,130 +805,134 @@ a .fa-chevron-down {
         font-weight: bold;
         background-color: #f3f6fa;
     }
+    /* Changing the way h1 will look */
     h1 {
         text-align: right;
         margin-top: 0%;
         padding-right: 15%;
     }
+    /* Decrasing the font to a suitable size for first word of the title */
     h1 span:first-child {
         font-size: 14vw;
     }
+    /* Decrasing the font to a suitable size for second word of the title */
     h1 span:last-child {
         font-size: 9vw;
     }
+    /* Fixing the sizing and positioning */
     .location_content {
         margin: 4%;
         padding: 8%;
         background-size: 50%, 100%;
-        /* height: 100%;
-    width: 100%; */
-        /* Adjust to fit everything */
     }
+    /* Changing how items will be displayed in smaller sreen */
     .item {
         flex-direction: column-reverse;
-        /* Stack everything vertically */
         align-items: center;
-        /* Center content */
     }
+    /* Changing how card_row will be displayed in smaller sreen */
     .card_row {
         display: flex;
-        /* margin-top: 50px;
-    margin-bottom: 50px; */
-        /* grid-gap: 30px; */
+        /* Making it into a colum so it's no bunched up */
         flex-direction: column;
         align-items: center;
+        /* Changing the size to suit the look */
         width: 500px;
         height: 50%;
         margin: auto;
         padding: 0;
     }
+    /* The styling for score-item1 when screen decreases */
     .score-item1 {
         flex-direction: column;
-        /* Align items in th center */
         gap: 20px;
         border-radius: 10px;
         overflow: hidden;
         padding: 20px;
         max-width: 1200px;
-        /* Adjust width as needed */
         margin: 10px auto;
-        /* Center the cards */
         background-image: none;
     }
+    /* The styling for score-item2 when screen decreases */
     .score-item2 {
         flex-direction: column-reverse;
+        /* Removing background image */
         background-image: none;
     }
+    /* Changing the background for score_content */
     .score_content {
+        /* Fixing and adjusting for the background image */
         background-image: url(images_badminton/score_background.png);
         background-size: 100%, 100%;
         background-repeat: no-repeat;
         background-position: center;
     }
     .scores {
+        /* Removing the background image */
         background-image: none;
     }
+    /* Changing the sizing of the games navigation area */
     .nav-links .nav-link-items a .fa-chevron-down {
         pointer-events: none;
         width: 0px;
-        /* Prevent the chevron from triggering hover */
     }
+    /* Changing the padding on the right for games link */
     span.hover {
         padding-right: 25px;
     }
 }
 
+
+/* The styling when the screen decreasees even further */
+
 @media screen and (max-width: 1000px) {
+    /* Making the nav-logo size even smaller than before */
     .nav-logo {
         padding: 0%;
         width: 200px;
         height: auto;
     }
+    /* Changing the styling for h1 to be smaller */
     h1 {
         text-align: right;
-        /* margin-top: 15%; */
         padding-right: 15%;
         margin-bottom: 35%;
     }
+    /* Making the first word on title to be smaller */
     h1 span:first-child {
         font-size: 11vw;
         position: absolute;
         top: 83x;
         right: 18%;
     }
+    /* Making the second part on title to be smaller */
     h1 span:last-child {
         font-size: 6vw;
         position: absolute;
         top: 100px;
         right: 10%;
     }
+    /* Adjusting the sizing of the content_img */
     img.content_img {
         width: 470px;
         text-align: center;
     }
+    /* Changing the background size to be smaller */
     .location_content {
         background-size: 50%, 100%;
-        /* height: 100%;
-    width: 100%; */
-        /* Adjust to fit everything */
     }
 }
 
+
+/* The styling when the screen decreasees even further */
+
 @media screen and (max-width: 550px) {
+    /* Making the background image to be smaller so image can fit */
     .location_content {
         background-size: 80%, 100%;
-        /* height: 100%;
-    width: 100%; */
-        /* Adjust to fit everything */
     }
+    /* Fixing the background image of the yellow person on home page */
     .home-item1 {
-        /* flex-direction: column-reverse; */
-        /* Stack everything vertically */
-        /* align-items: center; */
         background-size: 250px 40%;
-        /* background-position-y: 430px;
-        margin-left: 15%;
-        margin-right: 15%; */
-        /* Center content */
     }
 }

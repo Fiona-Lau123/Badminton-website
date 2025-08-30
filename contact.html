@@ -6,10 +6,13 @@
     <!--Link the page to the css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Links to fonts, to use in css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,800;1,800&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- The title of the page -->
     <title>AGGS badminton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,33 +24,63 @@
          also considering it in responsive mode-->
     <div class="nav-container">
 
-        <!--<input id="nav-toggle" type="checkbox"> -->
+        <!-- This code is for the logo that will be displayed in the 
+         same section as navigation bar -->
         <div class="nav-logo">
-            <a href="index.html"><img src="images_badminton/aggs_logo.png" alt="Image of hari dance logo" style="width:100%; height:100%;"></a>
+            <a href="index.html"><img src="images_badminton/aggs_logo.png" alt="Image of AGGS logo" style="width:100%; height:100%;"></a>
         </div>
 
+        <!-- The icon of the bugrer menu -->
         <i class="fa-solid fa-bars open-menu"></i>
+
+        <!-- The background for the navigation bar when burger 
+         menu is being used -->
         <div class="background"></div>
 
-        <!--Links to the other pages-->
+        <!--Links to the pages-->
         <div class="nav-links-container">
             <i class="fa-solid fa-xmark close-menu"></i>
 
+            <!-- This is where the items of the navigation bar would be -->
             <ul class="nav-links">
-                <li class="nav-link-items"><a href="index.html">HOME</a></li>
-                <li class="nav-link-items dropdown-menu-branch"><a href="games.html" data-toggle="dropdown-menu">GAMES<i class ="fa-solid fa-chevron-down"> </i></a>
 
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="locations.html">Locations</a></li>
-                        <li class="dropdown-menu-item"><a href="rules.html">Rules</a></li>
-                        <li class="dropdown-menu-item"><a href="score.html">Score</a></li>
-                    </ul>
-
+                <!-- Code for the home page link -->
+                <li class="nav-link-items"><a href="index.html" class="underline">HOME</a>
                 </li>
-                <li class="nav-link-items"><a class="hover" href="contact.html">CONTACT</a></li>
+
+                <!-- Code for the games page link, 
+                 along with the dropdown menu -->
+                <li class="nav-link-items dropdown-menu-branch">
+                    <a href="games.html" data-toggle="dropdown-menu">
+                        <span class="hover">GAMES</span>
+                        <i class="fa-solid fa-chevron-down"> </i>
+                    </a>
+
+
+                    <!-- The dropdown menu links in the games navigation -->
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="locations.html">Locations</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="rules.html">Rules</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="score.html">Score</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Code for the contact page link -->
+                <li class="nav-link-items">
+                    <a href="contact.html">
+                        <span class="hover">CONTACT</span></a>
+                </li>
             </ul>
         </div>
     </div>
+
+    <!-- Linking this html to the javascript name -->
     <script src="badminton.js"></script>
 
 
@@ -63,42 +96,51 @@
         <span>CONTACT</span> <span><br>CONTACT DETAILS</span>
     </h1>
 
+    <!-- Code for the subtitle -->
     <h2 class="home_sub">WHERE TO CONTACT</h2>
 
-
-    <!-- <div class="content_items">
-        <img class="content_img" src="images_badminton/home-content.png" alt="Image of someone serving">
-
-        <h3 class="home_sub">BADMINTON AT AGGS</h3>
-        <p> Auckland Girls’ Grammar (AGGS) offers badminton during term 2. Any year level is welcome to join. If you’ve had no or little experience with badminton your still free to join, there would be badminton training to help improve on skills.</p>
-
-    </div> -->
-
+    <!-- This section is where the main image and contact are -->
     <div class="item">
         <div class="home_content">
             <!--Stores the content-->
             <h3 class="home_sub">JOIN NOW</h3>
+            <!--Title for this section-->
             <p> Are you interested in playing badminton for Auckland Girls’ Grammar (AGGS)? During the winter season at term 2, then to join you can visit here for more information and to register to play for an AGGS badminton team during the winter season.
                 Trial information will be confirmed with the leader. For more details, below are the contact details if you have any questions. </p>
         </div>
 
+        <!-- Image that goes next to the content -->
         <img class="content_img" src="images_badminton/contact-content.png" alt="Image of someone serving">
     </div>
 
 
+    <!-- These are the three boxes below the contact page -->
     <div class="card_row">
+
+        <!-- Code for the first card -->
         <div class="card_1">
+
+            <!-- Image for the first card -->
             <img class="card_img" src="images_badminton/contact-box1.png" alt="Image of badminton court">
+
+            <!-- The content for the first card -->
             <div class="cover">
                 <p class="box_title">Who</p>
+                <!--Title of that card-->
                 <p class="box_content">Coaches that are in charge of badminton are: Sakshi Anand and Abiitha Faramacevin<br><br> Teachers you can reach out to for any questions or concern: Mr Hipa</p>
             </div>
         </div>
 
+        <!-- Code for the second card -->
         <div class="card_1">
+
+            <!-- Image for the second card -->
             <img class="card_img" src="images_badminton/contact-box2.png" alt="Image of badminton court">
+
+            <!-- The content for the second card -->
             <div class="cover">
                 <p class="box_title">Email</p>
+                <!--Title for this card-->
                 <p class="box_content">
                     Sakshi Anand: sa210008@students.aggs.school.nz<br>
                     <br>Abiitha Faramacevin: ab230389@students.aggs.school.nz<br>
@@ -106,10 +148,15 @@
             </div>
         </div>
 
+
+        <!-- Code for the third card -->
         <div class="card_1">
+
+            <!-- Image for the third card -->
             <img class="card_img" src="images_badminton/contact-box3.png" alt="Image of badminton court">
             <div class="cover">
                 <p class="box_title">Where</p>
+                <!--Title for this card-->
                 <p class="box_content">You can reach out to Mr Hipa for more information. You can find him at the lower gym at his office or if you happen to see any of the coaches aroumd, reach out to them</p>
             </div>
         </div>
