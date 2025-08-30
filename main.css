@@ -458,7 +458,7 @@ nav {
     width: 40px;
     margin-left: 10px;
     transition: 0.3s ease;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .nav-link-items:hover>a>.fa-chevron-down {
@@ -549,8 +549,8 @@ a .fa-chevron-down {
         padding-top: 1%;
     }
     .nav-container .nav-links-container {
+        display: none;
         position: absolute;
-        /* right: -500px; */
         visibility: hidden;
         width: 400px;
         height: 100%;
@@ -562,6 +562,7 @@ a .fa-chevron-down {
         transition: all 0.3s ease-in;
     }
     .nav-container .nav-links-container.open {
+        display: block;
         visibility: visible;
         transition: all 0.3s ease-out;
         right: 0;
