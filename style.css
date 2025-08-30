@@ -216,12 +216,6 @@ h1 span:last-child {
     font-size: 18px;
     margin-left: 20%;
     margin-right: 20%;
-}
-
-.box_content_email {
-    font-size: 18px;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 0;
 }
 
@@ -408,21 +402,13 @@ nav {
 
 .nav-links>.nav-link-items>a {
     color: white;
-    text-decoration: none;
+    /* text-decoration: none; */
     display: flex;
     padding: 16px 0;
     font-weight: 500;
     /* transition: 0.3s ease; */
     align-items: center;
 }
-
-.nav-links .nav-link-items a:hover {
-    text-decoration: none;
-    /* Removes underline on hover */
-}
-
-
-/* Add underline to text only (not the chevron) */
 
 .nav-links .nav-link-items a:hover span {
     text-decoration: underline;
@@ -431,11 +417,6 @@ nav {
 
 
 /* Specific styling to target the chevron icon */
-
-.nav-links .nav-link-items a .fa-chevron-down {
-    pointer-events: none;
-    /* Prevent the chevron from triggering hover */
-}
 
 
 /* .nav-links>.nav-link-items>a:hover {
@@ -521,12 +502,6 @@ a .fa-chevron-down {
     transition: 0.3s ease-in;
 }
 
-.nav-container .background.active {
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s ease-out;
-}
-
 .nav-container .open-menu {
     display: none;
     font-size: 24px;
@@ -573,7 +548,7 @@ a .fa-chevron-down {
     }
     .nav-links-container>.nav-links>.nav-link-items>a {
         color: #fff;
-        padding: 24px 16px;
+        padding: 24px 26px;
         border-bottom: 1px solid #ffffff20;
         display: flex;
         justify-content: space-between;
@@ -583,6 +558,11 @@ a .fa-chevron-down {
     }
     .nav-container>.nav-links-container>.nav-links>.dropdown-menu-branch.active>a .fa-chevron-down {
         transform: rotate(-180deg);
+    }
+    .nav-container .background.active {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.3s ease-out;
     }
     .nav-links>.nav-link-items>.dropdown-menu {
         width: 100%;
@@ -755,6 +735,9 @@ a .fa-chevron-down {
         pointer-events: none;
         width: 0px;
         /* Prevent the chevron from triggering hover */
+    }
+    span.hover {
+        padding-right: 25px;
     }
 }
 
