@@ -417,7 +417,7 @@ img.content_img {
 
 .scores {
     background-image: url(images_badminton/score_background.png);
-    background-size: 65%, 100%;
+    background-size: 60%, 100%;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 30px;
