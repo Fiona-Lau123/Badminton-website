@@ -4,7 +4,7 @@
         closeNav = document.querySelector(".close-menu"),
         navMenu = document.querySelector(".nav-links-container"),
         background = document.querySelector(".background"),
-        mediaSize = 992; //This should be the breakpoint
+        mediaSize = 1250; //This should be the breakpoint
 
 
     //Adding click event for open, close and background 
@@ -22,7 +22,8 @@
     navMenu.addEventListener("click", (event) => {
 
         //Checking if the clicked element has data-toggle
-        if (event.target.hasAttribute("data-toggle") && window.innerWidth <= mediaSize) {
+        if (event.target.hasAttribute("data-toggle") && 
+        window.innerWidth <= mediaSize) {
             event.preventDefault(); //Prevent default link behaviour
             const dropdownMenuBranch = event.target.parentElement;
 
@@ -37,8 +38,10 @@
 
                 //Opening of the clicked dropdown 
                 dropdownMenuBranch.classList.add("active");
-                const dropdownMenu = dropdownMenuBranch.querySelector(".dropdown-menu")
-                dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px";
+                const dropdownMenu = dropdownMenuBranch.
+                querySelector(".dropdown-menu")
+                dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight 
+                + "px";
             }
         }
     });
